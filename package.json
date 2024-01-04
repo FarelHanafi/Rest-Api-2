@@ -4,6 +4,7 @@
   "description": "Rest API for bot WhatsApp.",
   "main": "index.js",
   "scripts": {
+    "build": "tsc && node index.js",
     "start": "node index.js"
   },
   "author": "Xyroinee ID",
