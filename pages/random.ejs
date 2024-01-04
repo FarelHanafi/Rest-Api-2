@@ -1,0 +1,358 @@
+<%- include('template/header') %>
+		<div id="left-sidebar" class="sidebar ">
+			<h5 class="brand-name">RellXyz APIs <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+			<nav id="left-sidebar-nav" class="sidebar-nav">
+				<ul class="metismenu">
+					<li class="g_heading">Menu Utama</li>
+					<li ><a href="/dashboard"><i class="icon-home"></i><span>Dashboard</span></a></li>                        
+					<li><a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="icon-diamond"></i><span>Pricing</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link user_btn"><i class="icon-user"></i><span>Profile</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link icon settingbar"><i class="icon-settings"></i><span>Setting</span></a></li>
+					
+					<li class="g_heading">Menu Feature</li>
+					<li><a href="/ai"><i class="icon-ghost"></i><span>AI</span></a></li>
+					<li><a href="/animanga"><i class="icon-eye"></i><span>Anime & Manga</span></a></li>
+					<li><a href="/download"><i class="icon-cloud-download"></i><span>Downloader</span></a></li>
+					<li class="active"><a href="/random"><i class="icon-emoticon-smile"></i><span>Random</span></a></li>
+					<li><a href="/news"><i class="icon-fire"></i><span>News</span></a></li>
+					<li><a href="/search"><i class="icon-magnifier"></i><span>Search</span></a></li>
+					<li><a href="/textpro"><i class="icon-energy"></i><span>Text Pro</span></a></li>
+					<li><a href="/photooxy"><i class="icon-camera"></i><span>Photo Oxy</span></a></li>
+					<li><a href="/canvas"><i class="icon-map"></i><span>Canvas</span></a></li>
+					<li><a href="/maker"><i class="icon-pencil"></i><span>Maker</span></a></li>
+					<li><a href="/stalking"><i class="icon-support"></i><span>Stalking</span></a></li>
+					<li><a href="/other"><i class="icon-layers"></i><span>Others</span></a></li>
+					<li class="g_heading">Copyright By Xyro & Cham</li>
+				</ul>
+			</nav>        
+		</div>
+	
+		<div class="page">
+			<div id="page_top" class="section-body">
+				<div class="container-fluid">
+					<div class="page-header">
+						<div class="left">
+							<h1 class="page-title">Dashboard</h1>                  
+						</div>
+						<div class="right">
+							<div class="notification d-flex">
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow dark-mode">
+										<ul class="right_chat list-unstyled p-0 dark-mode">
+											<center>
+												<iframe src="https://www5.cbox.ws/box/?boxid=944386&boxtag=LzAiPD" width="350" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+											  </center>                      
+										</ul>
+										<div class="dropdown-divider"></div>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<ul class="list-unstyled feeds_widget">
+											<li>
+												<div class="feeds-left"><i class="fa fa-check"></i></div>
+												<div class="feeds-body">
+													<h4 class="title text-danger">NEW RELEASE <small class="float-right text-muted">01:05</small></h4>
+													<small>Xyroinee REST API UPDATE</small>
+												</div>
+											</li>                                
+										</ul>
+										<div class="dropdown-divider"></div>
+										<a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item" href="/logout"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="container-fluid">
+					<div class="row clearfix">
+						<div class="col-12 col-sm-12">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="card-title">RANDOM FEATURE</h3>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-hover table-striped mb-0 text-nowrap">
+											<thead>
+												<tr>
+													<th>Feature</th>
+													<th>Kategori</th>
+													<th>Status</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+                                                    <td>Random Asupan</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/video/random?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Random Cecan</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/malaysia?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan China</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/china?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan Lokal</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/indonesia?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan Jepang</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/japan?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan Korea</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/korean?apikey=<%= apikey %>  " class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan Thailand</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/thailand?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cecan Vietnam</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/asupan/image/vietnam?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Random Nekopoi</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/anime/nekopoi?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Random Hentai</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/anime/hentai?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Random Pornhub</td>
+                                                    <td>Random Asupan</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/random/pornhub?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Akira</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/akira?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Anna</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/anna?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Asuna</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Asuna?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ayano</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Ayano?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ayuzawa</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Ayuzawa?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Bocchi</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Bocchi?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Chisato</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Chisato?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Cosplay</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Cosplay?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Elaina</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Elaina?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ikuyo</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Ikuyo?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Kaela</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Kaela?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Kaguya</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Kaguya?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Kaori</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Kaori?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Kobo</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Kobo?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Kotori</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Kotori?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Loli</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Loli?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Miku</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Miku?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Neko</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Neko?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Rias</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Rias?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Sakura</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Sakura?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Sasuke</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Sasuke?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Shina</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Shina?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Shinka</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Shinka?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Shizuka</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Shizuka?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Shota</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Shota?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Takina</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Takina?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Waifu</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Waifu?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Yotsuba</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Yotsuba?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Yumeko</td>
+                                                    <td>Random Anime</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/sfw/Yumeko?apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								Copyright © 2023 By <a href="https://api.reinaja.my.id">RellXyz</a>.
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+<%- include('template/footer') %>

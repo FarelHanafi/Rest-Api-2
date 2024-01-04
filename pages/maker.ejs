@@ -1,0 +1,256 @@
+<%- include('template/header') %>
+		<div id="left-sidebar" class="sidebar ">
+			<h5 class="brand-name">Xyroınee API <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+			<nav id="left-sidebar-nav" class="sidebar-nav">
+				<ul class="metismenu">
+					<li class="g_heading">Menu Utama</li>
+					<li ><a href="/dashboard"><i class="icon-home"></i><span>Dashboard</span></a></li>                        
+					<li><a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="icon-diamond"></i><span>Pricing</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link user_btn"><i class="icon-user"></i><span>Profile</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link icon settingbar"><i class="icon-settings"></i><span>Setting</span></a></li>
+					
+					<li class="g_heading">Menu Feature</li>
+					<li><a href="/ai"><i class="icon-ghost"></i><span>AI</span></a></li>
+					<li><a href="/animanga"><i class="icon-eye"></i><span>Anime & Manga</span></a></li>
+					<li><a href="/download"><i class="icon-cloud-download"></i><span>Downloader</span></a></li>
+					<li><a href="/random"><i class="icon-emoticon-smile"></i><span>Random</span></a></li>
+					<li><a href="/news"><i class="icon-fire"></i><span>News</span></a></li>
+					<li><a href="/search"><i class="icon-magnifier"></i><span>Search</span></a></li>
+					<li><a href="/textpro"><i class="icon-energy"></i><span>Text Pro</span></a></li>
+					<li><a href="/photooxy"><i class="icon-camera"></i><span>Photo Oxy</span></a></li>
+					<li><a href="/canvas"><i class="icon-map"></i><span>Canvas</span></a></li>
+					<li class="active"><a href="/maker"><i class="icon-pencil"></i><span>Maker</span></a></li>
+					<li><a href="/stalking"><i class="icon-support"></i><span>Stalking</span></a></li>
+					<li><a href="/other"><i class="icon-layers"></i><span>Others</span></a></li>
+					<li class="g_heading">Copyright By Xyro & Cham</li>
+				</ul>
+			</nav>        
+		</div>
+	
+		<div class="page">
+			<div id="page_top" class="section-body">
+				<div class="container-fluid">
+					<div class="page-header">
+						<div class="left">
+							<h1 class="page-title">Dashboard</h1>                  
+						</div>
+						<div class="right">
+							<div class="notification d-flex">
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow dark-mode">
+										<ul class="right_chat list-unstyled p-0 dark-mode">
+											<center>
+												<iframe src="https://www5.cbox.ws/box/?boxid=944386&boxtag=LzAiPD" width="350" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+											  </center>                      
+										</ul>
+										<div class="dropdown-divider"></div>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<ul class="list-unstyled feeds_widget">
+											<li>
+												<div class="feeds-left"><i class="fa fa-check"></i></div>
+												<div class="feeds-body">
+													<h4 class="title text-danger">NEW RELEASE <small class="float-right text-muted">01:05</small></h4>
+													<small>Xyroinee REST API UPDATE</small>
+												</div>
+											</li>                                
+										</ul>
+										<div class="dropdown-divider"></div>
+										<a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item" href="/logout"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="container-fluid">
+					<div class="row clearfix">
+						<div class="col-12 col-sm-12">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="card-title">MAKER FEATURE</h3>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-hover table-striped mb-0 text-nowrap">
+											<thead>
+												<tr>
+													<th>Feature</th>
+													<th>Kategori</th>
+													<th>Status</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+                                                <tr>
+                                                    <td>Instagram</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/instagram?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Scary</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/scary?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Glitch</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/glitch?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Rejected</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/rejected?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ps 4</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/ps4?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Brazzers</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/brazzers?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Distort</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/distort?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Moustache</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/moustache?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Frame</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/frame?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Missionpassed</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/missionpassed?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Embos</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/emboss?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Spongebob</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/spongebob?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Facebook</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/facebook?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Discord House</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/discordhouse?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Karenhave</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/karenhave?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Thanos</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/thanos?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Approved</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/approved?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Burn</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/burn?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Challenger</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/challenger?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Crush</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/crush?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Ditactor</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/dictator?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Versus</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/maker/vs?url=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&url2=https://i.pinimg.com/originals/8a/b5/6a/8ab56a15ffb135624c8b8f9653197a3f.jpg&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Image To Anime</td>
+                                                    <td>Maker</td>
+                                                    <td>Aktif</td>
+													<td><a href="/api/others/toanime?url=https://i.pinimg.com/originals/67/fc/a5/67fca5aabcffa18393fb3eb4e4dd4b0d.png&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+                                                  </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								Copyright © 2023 By <a href="https://xyroinee.xyz">Xyro</a> & <a href="https://ircham.my.id">Cham</a>.
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+<%- include('template/footer') %>

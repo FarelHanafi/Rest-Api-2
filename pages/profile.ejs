@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Profile">
+	<meta name="author" content="Xyroinee GanzZ">
+	<meta name="keywords" content="Profile">
+	<title>Dashboard - RellXyz APIs</title>
+	<!-- Bootstrap Core and vandor -->
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+	<!-- Core css -->
+	<link rel="stylesheet" href="assets/css/main.css"/>
+	<!-- Bootstrap Core and vandor -->
+    <!-- Plugins css -->
+	<link rel="stylesheet" href="assets/plugins/charts-c3/c3.min.css"/>
+	<link rel="stylesheet" href="assets/plugins/jvectormap/jvectormap-2.0.3.css" />
+
+	<link rel="stylesheet" href="assets/plugins/chartjs/chart.min.js">
+	<link rel="stylesheet" href="assets/plugins/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-119386393-1');
+	</script>
+</head>
+<body class="font-montserrat dark-mode">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+		<div class="loader">
+		</div>
+	</div>
+
+	<div id="main_content">
+	
+		<div id="header_top" class="header_top">
+			<div class="container">
+				<div class="hleft">
+					<a class="header-brand" href="/dashboard"><i class="fa fa-dashboard brand-logo"></i></a>
+					
+				</div>
+				<div class="hright">
+					<div class="dropdown">
+						<a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="fa fa-money" data-toggle="tooltip" data-placement="right" title="Pricelist"></i></a>
+						<a href="javascript:void(0)" class="nav-link icon settingbar"><i class="fa fa-gear fa-spin" data-toggle="tooltip" data-placement="right" title="Settings"></i></a>
+						<a href="javascript:void(0)" class="nav-link user_btn"><img class="avatar" src="img/avatars/1.png" alt="" data-toggle="tooltip" data-placement="right" title="Profile"/></a>
+						<a href="javascript:void(0)" class="nav-link icon menu_toggle"><i class="fa  fa-align-left"></i></a>
+					</div>            
+				</div>
+			</div>
+		</div>
+	
+		<div id="rightsidebar" class="right_sidebar dark-mode">
+			<a href="javascript:void(0)" class="p-3 settingbar float-right"><i class="fa fa-close"></i></a>
+			<ul class="nav nav-tabs" role="tablist">
+				<li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#Settings" aria-expanded="true">Settings</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane vivify fadeIn active" id="Settings" aria-expanded="true">
+					<div class="mb-4">
+						<h6 class="font-14 font-weight-bold text-muted">Font Style</h6>
+						<div class="custom-controls-stacked font_setting">
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="font" value="font-opensans">
+								<span class="custom-control-label">Open Sans Font</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="font" value="font-montserrat" checked="">
+								<span class="custom-control-label">Montserrat Google Font</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="font" value="font-poppins">
+								<span class="custom-control-label">Poppins Google Font</span>
+							</label>
+						</div>
+					</div>
+					<div class="mb-4">
+						<h6 class="font-14 font-weight-bold text-muted">Dropdown Menu Icon</h6>
+						<div class="custom-controls-stacked arrow_option">
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="marrow" value="arrow-a">
+								<span class="custom-control-label">A</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="marrow" value="arrow-b" checked="">
+								<span class="custom-control-label">B</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="marrow" value="arrow-c">
+								<span class="custom-control-label">C</span>
+							</label>
+						</div>
+						<h6 class="font-14 font-weight-bold mt-4 text-muted">SubMenu List Icon</h6>
+						<div class="custom-controls-stacked list_option">
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="listicon" value="list-a">
+								<span class="custom-control-label">A</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="listicon" value="list-b" checked="">
+								<span class="custom-control-label">B</span>
+							</label>
+							<label class="custom-control custom-radio custom-control-inline">
+								<input type="radio" class="custom-control-input" name="listicon" value="list-c">
+								<span class="custom-control-label">C</span>
+							</label>
+						</div>
+					</div>
+					<div>
+						<h6 class="font-14 font-weight-bold mt-4 text-muted">General Settings</h6>
+						<ul class="setting-list list-unstyled mt-1 setting_switch">
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Night Mode</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-darkmode" checked="">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Fix Navbar top</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-fixnavbar">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Header Dark</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-pageheader">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Min Sidebar Dark</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-min_sidebar">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Sidebar Dark</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-sidebar">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Icon Color</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-iconcolor">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Gradient Color</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-gradient">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Box Shadow</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxshadow">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">RTL Support</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-rtl">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label class="custom-switch">
+									<span class="custom-switch-description">Box Layout</span>
+									<input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input btn-boxlayout">
+									<span class="custom-switch-indicator"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<hr>
+					<div class="form-group">
+						<label class="d-block">SPEED TEST<span class="float-right">77%</span></label>
+						<div class="progress progress-sm">
+							<div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%;"></div>
+						</div>
+						<button type="button" class="btn btn-primary btn-block mt-3">BY Xyroınee & Cham</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="theme_div dark-mode">
+			<div class="card">
+				<div class="card-header dark-mode">
+					<h3 class="card-title">MALL</h3>
+					<div class="card-options">
+						<a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="card-body dark-mode">
+					<div class="text-center">
+						<div class="row">
+							<div class="col-6 pb-3">
+								<label class="mb-0">HARGA</label>
+								<h4 class="font-30 font-weight-bold">45K</h4>
+							</div>
+							<div class="col-6 pb-3">
+								<label class="mb-0">HEMAT</label>
+								<h4 class="font-30 font-weight-bold">15K</h4>
+							</div>
+						</div>
+					</div>                
+					<div class="form-group">
+						<label class="d-block">MASA AKTIF<span class="float-right">5 BULAN</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="d-block">LIMIT <span class="float-right">UNLIMITED</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="form-group mb-0">
+						<label class="d-block">CUSTOM APIKEY <span class="float-right">ON</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div><br>
+					<div class="form-group mb-0">
+						<a class="btn btn-info" href="https://wa.me/6285760451683?text=Permisi kak, saya mau order *premium user* 5 bulan gratis script bot.">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header dark-mode">
+					<h3 class="card-title">SUPERMARKET</h3>
+					<div class="card-options">
+						<a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="card-body dark-mode">
+					<div class="text-center">
+						<div class="row">
+							<div class="col-6 pb-3">
+								<label class="mb-0">HARGA</label>
+								<h4 class="font-30 font-weight-bold">30K</h4>
+							</div>
+							<div class="col-6 pb-3">
+								<label class="mb-0">HEMAT</label>
+								<h4 class="font-30 font-weight-bold">6K</h4>
+							</div>
+						</div>
+					</div>                
+					<div class="form-group">
+						<label class="d-block">MASA AKTIF<span class="float-right">3 BULAN</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="d-block">LIMIT <span class="float-right">UNLIMITED</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="form-group mb-0">
+						<label class="d-block">CUSTOM APIKEY <span class="float-right">ON</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div><br>
+					<div class="form-group mb-0">
+						<a class="btn btn-info" href="https://wa.me/6285760451683?text=Permisi kak, saya mau order *premium user* 3 bulan gratis script bot.">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header dark-mode">
+					<h3 class="card-title">ALFAMART & INDOMART</h3>
+					<div class="card-options">
+						<a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="card-body dark-mode">
+					<div class="text-center">
+						<div class="row">
+							<div class="col-6 pb-3">
+								<label class="mb-0">HARGA</label>
+								<h4 class="font-30 font-weight-bold">20K</h4>
+							</div>
+							<div class="col-6 pb-3">
+								<label class="mb-0">HEMAT</label>
+								<h4 class="font-30 font-weight-bold">4K</h4>
+							</div>
+						</div>
+					</div>                
+					<div class="form-group">
+						<label class="d-block">MASA AKTIF<span class="float-right">2 BULAN</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="d-block">LIMIT <span class="float-right">UNLIMITED</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="form-group mb-0">
+						<label class="d-block">CUSTOM APIKEY <span class="float-right">ON</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div><br>
+					<div class="form-group mb-0">
+						<a class="btn btn-info" href="https://wa.me/6285760451683?text=Permisi kak, saya mau order *premium user* 2 bulan gratis script bot.">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header dark-mode">
+					<h3 class="card-title">SWALAYAN MIKRO</h3>
+					<div class="card-options">
+						<a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="card-body dark-mode">
+					<div class="text-center">
+						<div class="row">
+							<div class="col-6 pb-3">
+								<label class="mb-0">HARGA</label>
+								<h4 class="font-30 font-weight-bold">12K</h4>
+							</div>
+							<div class="col-6 pb-3">
+								<label class="mb-0">HEMAT</label>
+								<h4 class="font-30 font-weight-bold">0K</h4>
+							</div>
+						</div>
+					</div>                
+					<div class="form-group">
+						<label class="d-block">MASA AKTIF<span class="float-right">1 BULAN</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="d-block">LIMIT <span class="float-right">UNLIMITED</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div>
+					<div class="form-group mb-0">
+						<label class="d-block">CUSTOM APIKEY <span class="float-right">ON</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+						</div>
+					</div><br>
+					<div class="form-group mb-0">
+						<a class="btn btn-info" href="https://wa.me/6285760451683?text=Permisi kak, saya mau order *premium user* 1 bulan gratis script bot.">Beli Sekarang</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header dark-mode">
+					<h3 class="card-title">WARUNG GRATIS</h3>
+					<div class="card-options">
+						<a href="#" class="card-options-collapse" data-toggle="card-collapse"><i class="fe fe-chevron-up"></i></a>
+					</div>
+				</div>
+				<div class="card-body dark-mode">
+					<div class="text-center">
+						<div class="row">
+							<div class="col-6 pb-3">
+								<label class="mb-0">HARGA</label>
+								<h4 class="font-30 font-weight-bold">FREE</h4>
+							</div>
+							<div class="col-6 pb-3">
+								<label class="mb-0">HEMAT</label>
+								<h4 class="font-30 font-weight-bold">NO</h4>
+							</div>
+						</div>
+					</div>                
+					<div class="form-group">
+						<label class="d-block">MASA AKTIF<span class="float-right">SELAMANYA</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-cyan" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="d-block">LIMIT <span class="float-right">UNLIMITED</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+						</div>
+					</div>
+					<div class="form-group mb-0">
+						<label class="d-block">CUSTOM APIKEY <span class="float-right">ON</span></label>
+						<div class="progress progress-xs">
+							<div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="user_div">
+			<h5 class="brand-name mb-4">Xyro API<a href="javascript:void(0)" class="user_btn"><i class="icon-logout"></i></a></h5>
+			<div class="card">
+				<div class="card-body">
+					<div class="media">
+						<img class="avatar avatar-xl mr-3" src="img/avatars/1.png" alt="avatar">
+						<div class="media-body">
+							<h5 class="m-0">Xyroınee</h5>
+							<p class="text-muted mb-0">Back End Developer</p>
+							<ul class="social-links list-inline mb-0 mt-2">
+								<li class="list-inline-item"><a href="https://facebook.com/danilelistz19" title="" data-toggle="tooltip" data-original-title="@danilelistz19"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="https://instagram.com/xyroinee" title="" data-toggle="tooltip" data-original-title="@xyroinee"><i class="fa fa-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="https://wa.me/6285760451683" title="" data-toggle="tooltip" data-original-title="085760451683"><i class="fa fa-whatsapp"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-body">
+					<div class="media">
+						<img class="avatar avatar-xl mr-3" src="img/avatars/1.png" alt="avatar">
+						<div class="media-body">
+							<h5 class="m-0">Cham</h5>
+							<p class="text-muted mb-0">Front End Developer</p>
+							<ul class="social-links list-inline mb-0 mt-2">
+								<li class="list-inline-item"><a href="https://facebook.com/muhammad.ircham.1610" title="" data-toggle="tooltip" data-original-title="@muhammad.ircham.1610"><i class="fa fa-facebook"></i></a></li>
+								<li class="list-inline-item"><a href="https://instagram.com/mhmd_ircham" title="" data-toggle="tooltip" data-original-title="@mhmd_ircham"><i class="fa fa-instagram"></i></a></li>
+								<li class="list-inline-item"><a href="https://wa.me/6281231913949" title="" data-toggle="tooltip" data-original-title="081231913949"><i class="fa fa-whatsapp"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div id="left-sidebar" class="sidebar ">
+			<h5 class="brand-name">Xyroınee API <a href="javascript:void(0)" class="menu_option float-right"><i class="icon-grid font-16" data-toggle="tooltip" data-placement="left" title="Grid & List Toggle"></i></a></h5>
+			<nav id="left-sidebar-nav" class="sidebar-nav">
+				<ul class="metismenu">
+					<li class="g_heading">Menu Utama</li>
+					<li class="active"><a href="/dashboard"><i class="icon-home"></i><span>Dashboard</span></a></li>                        
+					<li><a href="javascript:void(0)" class="nav-link icon theme_btn"><i class="icon-diamond"></i><span>Pricing</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link user_btn"><i class="icon-user"></i><span>Profile</span></a></li>
+					<li><a href="javascript:void(0)" class="nav-link icon settingbar"><i class="icon-settings"></i><span>Setting</span></a></li>
+					
+					<li class="g_heading">Menu Feature</li>
+					<li><a href="/ai"><i class="icon-ghost"></i><span>AI</span></a></li>
+					<li><a href="/animanga"><i class="icon-eye"></i><span>Anime & Manga</span></a></li>
+					<li><a href="/download"><i class="icon-cloud-download"></i><span>Downloader</span></a></li>
+					<li><a href="/random"><i class="icon-emoticon-smile"></i><span>Random</span></a></li>
+					<li><a href="/news"><i class="icon-fire"></i><span>News</span></a></li>
+					<li><a href="/search"><i class="icon-magnifier"></i><span>Search</span></a></li>
+					<li><a href="/textpro"><i class="icon-energy"></i><span>Text Pro</span></a></li>
+					<li><a href="/photooxy"><i class="icon-camera"></i><span>Photo Oxy</span></a></li>
+					<li><a href="/canvas"><i class="icon-map"></i><span>Canvas</span></a></li>
+					<li><a href="/maker"><i class="icon-pencil"></i><span>Maker</span></a></li>
+					<li><a href="/stalking"><i class="icon-support"></i><span>Stalking</span></a></li>
+					<li><a href="/other"><i class="icon-layers"></i><span>Others</span></a></li>
+					<li class="g_heading">Copyright By Xyro & Cham</li>
+				</ul>
+			</nav>        
+		</div>
+	
+		<div class="page">
+			<div id="page_top" class="section-body">
+				<div class="container-fluid">
+					<div class="page-header">
+						<div class="left">
+							<h1 class="page-title">Dashboard</h1>                  
+						</div>
+						<div class="right">
+							<div class="notification d-flex">
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="badge badge-success nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow dark-mode">
+										<ul class="right_chat list-unstyled p-0 dark-mode">
+											<center>
+												<iframe src="https://www5.cbox.ws/box/?boxid=944386&boxtag=LzAiPD" width="350" height="400" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+											  </center>                      
+										</ul>
+										<div class="dropdown-divider"></div>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-primary nav-unread"></span></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<ul class="list-unstyled feeds_widget">
+											<li>
+												<div class="feeds-left"><i class="fa fa-check"></i></div>
+												<div class="feeds-body">
+													<h4 class="title text-danger">NEW RELEASE <small class="float-right text-muted">01:05</small></h4>
+													<small>Xyroinee REST API UPDATE</small>
+												</div>
+											</li>                                
+										</ul>
+										<div class="dropdown-divider"></div>
+										<a href="javascript:void(0)" class="dropdown-item text-center text-muted-dark readall">Mark all as read</a>
+									</div>
+								</div>
+								<div class="dropdown d-flex">
+									<a class="nav-link icon d-none d-md-flex btn btn-default btn-icon ml-1" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+										<a class="dropdown-item" href="/logout"><i class="dropdown-icon fe fe-log-out"></i> Sign out</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body py-4 ">
+				<div class="container-fluid">
+					<div class="row clearfix">
+						<div class="col-lg-12">
+							<div class="mb-4">
+								<h2>Welcome Username</h2><h6 class="mt-1 mb-2"><b>Your Apikey: </b><b><%= apikey %></b></h6>
+								<small>Xyro REST api menyediakan 200+ Feature untuk WA BOT anda. Laporkan jika ada yang eror,<a href="https://wa.me/6285760451683"> Klik disini.</a></small>
+							</div>                        
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<div class="container-fluid">
+					<div class="row clearfix">
+						<div class="col-12 col-sm-12">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="card-title">HOT FEATURE</h3>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table class="table table-hover table-striped mb-0 text-nowrap">
+											<thead>
+												<tr>
+													<th>Feature</th>
+													<th>Kategori</th>
+													<th>Status</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Anime Diffusion</td>
+													<td>Ai</td>
+													<td>Aktif</td>
+													<td><a href="/api/ai/animediffusion?q=neko%20girl,%20cute%20face,%20upper%20body,%20white%20hair,%20look%20at%20viewer&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+												  </tr>
+												  <tr>
+													<td>Anime Diffusion 2</td>
+													<td>Ai</td>
+													<td>Aktif</td>
+													<td><a href="/api/ai/animediffusion2?q=1girl,%20cute%20face,%20upper%20body,%20white%20hair,%20look%20at%20viewer&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+												  </tr>
+												  <tr>
+													<td>Stable Diffusion</td>
+													<td>Ai</td>
+													<td>Aktif</td>
+													<td><a href="/api/ai/stablediffusion?q=1girl,%20cute%20face,%20upper%20body,%20white%20hair,%20look%20at%20viewer&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+												  </tr>
+												  <tr>
+													<td>Stable Diffusion 2</td>
+													<td>Ai</td>
+													<td>Aktif</td>
+													<td><a href="/api/ai/stablediffusion2?q=1girl,%20cute%20face,%20upper%20body,%20white%20hair,%20look%20at%20viewer&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+												  </tr>
+												  <tr>
+													<td>Chat Gpt</td>
+													<td>Ai</td>
+													<td>Aktif</td>
+													<td><a href="/api/others/chatgpt?q=apa%20itu%20ai&apikey=<%= apikey %>" class="fa fa-space-shuttle"> Execute</a></td>
+												  </tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix row-deck">
+						<div class="col-lg-12 col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h3 class="card-title">Example Code Case Your Whatsapp Bot</h3>
+									<div class="card-options">
+										<label class="custom-switch m-0">
+										</label>
+									</div>
+								</div>
+								<div class="card-body">
+									<div id="chart-bar">
+										<div class="row">
+										<div class="col-lg-3 col-md-12">
+											<h6>To get media</h6>
+											<code class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab">
+										<font color="cyan">case </font><font color="yellow">'randomcogan'</font>: {<br>
+result = await getBuffer(`https://<font color="white">api.reinaja.my.id/api/cogan/random?apikey=YOUR_APIKEY</font>`)<br>
+client.sendMessage(m.chat, {image: result, mimetype: <font color="yellow">'image/png'</font>}, {quoted:m})<br>
+}<br>
+<font color="cyan">break</font><br>
+									</code>
+										</div>
+										<div class="col-lg-3 col-md-12">
+												<h6>To get text</h6>
+											<code class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab">
+											<font color="cyan">case </font><font color="yellow">'google'</font>: {<br>
+	<font color="cyan">var</font> q = args.join(<font color="yellow">"</font> <font color="yellow">"</font>)<br><br>
+	<font color="cyan">let</font> result = await fetchJson(`https://<font color="white">api.xyroine.xyz/api/search/google?q=${q}&apikey=YOUR_APIKEY</font>`)<br>
+	results = ${result.result}<br>
+	reply(`${results}`)<br>
+	}<br>
+	<font color="cyan">break</font><br>
+									</code>
+										</div>
+										<div class="col-lg-3 col-md-12">
+												<h6>To get router media</h6>
+											<code class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab">
+										router.<font color="cyan">get</font>(<font color="yellow">'/cogan/random'</font>, async (req, res, next) => {<br>
+<font color="cyan">var</font> result = {<br>
+url: `https://<font color="white">api.reinaja.my.id/api/cogan/random?apikey=YOUR_APIKEY</font>`, method: 'GET', encoding: null };<br>
+request(result, <font color="cyan">function</font>(error, response, body) {<br>
+res.<font color="cyan">set</font>(<font color="yellow">'Content-Type'</font>, <font color="yellow">'image/png'</font>);<br>
+res.send(body)<br>
+})<br>
+})<br>
+									</code></div>
+									<div class="col-lg-3 col-md-12">
+											<h6>To get json</h6>
+											<code class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab">
+											router.<font color="cyan">get</font>(<font color="yellow">'/search/google'</font>, async(req, res, next) => {<br>
+	<font color="cyan">var</font> q = req.query.q<br><br>
+	
+	<font color="cyan">let</font> fetch = require(<font color="yellow">'node-fetch'</font>)<br>
+	fetch(encodeURI(`https://<font color="white">api.reinaja.my.id/api/search/google?q=${q}&apikey=YOUR_APIKEY</font>`))<br>
+	.then(response => response.json())<br>
+	.then(ress => {<br>
+		<font color="cyan">var</font> result = ress;<br>
+		res.json({<br>
+			result<br>
+			})<br>
+})})})<br>
+										</code>
+										<br>
+									</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-body">
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-12">
+								Copyright © 2023 By <a href="https://api.reinaja.my.id">RellXyz</a>.
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+    <script src="./js/dash.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/clock.js"></script>
+	
+	<script src="assets/bundles/lib.vendor.bundle.js"></script>
+
+<script src="assets/bundles/apexcharts.bundle.js"></script>
+<script src="assets/bundles/counterup.bundle.js"></script>
+<script src="assets/bundles/knobjs.bundle.js"></script>
+<script src="assets/bundles/c3.bundle.js"></script>
+<script src="assets/bundles/flot.bundle.js"></script><!-- flot charts Plugin Js --> 
+<script src="assets/bundles/jvectormap1.bundle.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/page/index.js"></script>
+	<script src="assets/js/page/index.js"></script>
+	</body>
+</html>
